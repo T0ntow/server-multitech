@@ -3,7 +3,7 @@ const connection = require('./connection')
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = 5001;
 app.use(cors());
 app.use(express.json());
 
@@ -23,6 +23,6 @@ const editProduct = require('./routes/editProduct')
 app.put('/editar-produto/:codigo', editProduct.editProduct);
 
 
-app.listen(3000, () => {
+app.listen(5001, () => {
   console.log(`funcionando na porta ${PORT}`);
 })
