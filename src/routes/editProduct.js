@@ -4,7 +4,7 @@ const editProduct = (req, res) =>  {
     const codigo = req.params.codigo;
 
     // Execute a atualização do produto no banco de dados
-    const query = `UPDATE produto SET cod_de_barras = ?, nome = ?, qtd_estoque = ?, preco = ?, percent_comissao = ? WHERE cod_de_barras = ${codigo}`;
+    const query = `UPDATE produtos SET cod_de_barras = ?, nome = ?, qtd_estoque = ?, preco = ?, percent_comissao = ? WHERE cod_de_barras = ${codigo}`;
 
     const values = [
         req.body.codigo,

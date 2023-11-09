@@ -1,7 +1,7 @@
 const connection = require('../connection');
 
 const addProduto = (req, res) => {
-    const sql = `INSERT INTO produto (cod_de_barras, nome, qtd_estoque, preco, percent_comissao) VALUES (?, ?, ?, ?, ?);`;
+    const sql = `INSERT INTO produtos (cod_de_barras, nome, qtd_estoque, preco, percent_comissao) VALUES (?, ?, ?, ?, ?);`;
 
     const values = [
         req.body.codigo,

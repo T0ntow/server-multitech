@@ -2,7 +2,7 @@ const connection = require('../connection');
 
 const deleteProduct = (req, res) => {
     const codigo = req.params.codigo;
-    const sql = `DELETE FROM produto WHERE cod_de_barras = '${codigo}'`;
+    const sql = `DELETE FROM produtos WHERE cod_de_barras = '${codigo}'`;
 
    connection.query(sql, (error, results) => {
       if (error) {
